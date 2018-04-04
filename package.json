@@ -1,0 +1,24 @@
+{
+  "name": "sketch-nibui",
+  "version": "0.1.0",
+  "description": "A library for Sketch plugins that lets you load UI views from NIB files built with Interface Builder. Designed for use with skpm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romannurik/sketch-nibui.git"
+  },
+  "keywords": [
+    "sketch",
+    "cocoascript",
+    "skpm"
+  ],
+  "author": "Roman Nurik <roman@nurik.net>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/romannurik/sketch-nibui/issues"
+  },
+  "homepage": "https://github.com/romannurik/sketch-nibui#readme"
+}
