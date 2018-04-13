@@ -11,7 +11,7 @@ This library is designed for use with [skpm](https://github.com/skpm/skpm).
    npm install --save sketch-nibui
    ```
 
-2. Create an XIB file in Interface Builder with a single top-level `NSView`.
+2. Create an XIB file in Interface Builder with a single top-level `NSView` or `NSWindow`.
 
 3. Convert the XIB to a NIB and place it in your plugin's `assets` directory:
    ```
@@ -41,6 +41,10 @@ You'll likely want to access subviews under your top-level `NSView`. To do that:
    to an ID like `myView`.
 
 2. Access it using `nib.views.myView`
+
+### Using windows
+
+If your XIB has an `NSWindow` as its top-level view, you can access it with `nib.rootWindow` and its content view with `nib.rootView`. Access subviews using `nib.views.myView` like when the top-level view is an `NSView`.
 
 ## Handling events
 

@@ -48,6 +48,9 @@ class NibUI {
         if (obj.className().endsWith('View')) {
           this.rootView = obj;
           break;
+        } else if (obj.className().endsWith('Window')) {
+          this.rootWindow = obj;
+          break;
         }
       }
     } else {
@@ -56,6 +59,9 @@ class NibUI {
 
     // populate view IDs
     this.views = {};
+    if (this.rootWindow != null) {
+      this.rootView = this.rootWindow.contentView();
+    }
     walkViewTree(this.rootView, view => {
       let id = String(view.identifier());
       if (id && !id.startsWith('_')) {
