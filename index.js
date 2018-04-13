@@ -60,7 +60,7 @@ class NibUI {
     // populate view IDs
     this.views = {};
     if (this.rootWindow != null) {
-      this.rootView = this.rootWindow.contentView()
+      this.rootView = this.rootWindow.contentView();
     }
     walkViewTree(this.rootView, view => {
       let id = String(view.identifier());
